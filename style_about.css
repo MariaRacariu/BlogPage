@@ -1,0 +1,53 @@
+/* Fonts:
+Montserrat
+Josefin Sans
+Prompt 
+*/
+body {
+    font-family: montserrat;
+    font-weight: 100;
+    margin-left: 20px;
+}
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* =============== Main =============== */
+.grid{
+    display: grid;
+    grid-template-rows: repeat(2, 100%);
+    grid-template-columns: repeat(3, 400px);
+    justify-content: space-between;
+}
+h1{
+    text-decoration: underline;
+}
+.about-me{
+    margin-right: 20px;
+}
+/* =============== Responsive/@media =============== */
+@media (max-width: 1100px){
+    body{
+        margin-left: 20px;
+        text-align: center;
+    }
+    .work , .education{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    h1{
+        text-align: center;
+    }
+}
+@media (max-width: 767px){
+    header{
+    justify-content: center;
+    }
+    .nav-item > a {
+    text-align: center;
+    }
+    
+}

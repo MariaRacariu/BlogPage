@@ -1,0 +1,56 @@
+/* Fonts:
+Montserrat
+Josefin Sans
+Prompt 
+*/
+body {
+    font-family: montserrat;
+    margin-left: 100px;
+}
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+/* =============== Main =============== */
+.wrapper{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+img{
+    max-width: 300px;
+    max-height: 300px;
+    box-shadow: 5px 5px rgba(151, 151, 151, 0.425);
+}
+
+/* =============== Responsive/@media =============== */
+@media (max-width: 1100px){
+    body{
+        margin-left:10px;
+    }
+}
+@media (max-width: 1000px){
+    body{
+        margin-left:20px;
+    }
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:650px){
+    .wrapper{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+@media (max-width: 767px){
+    header{
+    justify-content: center;
+    }
+    .nav-item > a {
+    text-align: center;
+    }
+}
