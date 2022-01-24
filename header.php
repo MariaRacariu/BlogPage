@@ -3,9 +3,9 @@
 $navBarArr = array(
     array("index.php", "Home"),
     array("blogPage.php", "Blog"),
-    array("", "About"),
-    array("", "Contact"),
-    array("", "Gallery"),
+    array("about.php", "About"),
+    array("contact.php", "Contact"),
+    array("gallery.php", "Gallery"),
     array("logout.php", "Log Out"),
     array("loginpage.php", "Log In")
 ); 
