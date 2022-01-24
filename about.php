@@ -2,9 +2,9 @@
 include 'databaseConnection.php';
 //--------------- SELECT POSTS --------------- \\
 //pdo prepare sql string to select posts from blogs table
-$fetchPosts = $pdo->prepare("SELECT title, date_length, position FROM jobs_and_education");
+$fetchInfo = $pdo->prepare("SELECT title, date_length, position FROM jobs_and_education");
 //run sql string after prepare
-$fetchPosts->execute();
+$fetchInfo->execute();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@ $fetchPosts->execute();
     <?php include 'header.php'; ?>
     <main>
         <?php 
-            while($rowPosts = $fetchPosts->fetch()){
+            while($rowPosts = $fetchInfo->fetch()){
                 ?>
                     <div class="grid">
                         <h3><?= $rowPosts['title'] ?></h3>
